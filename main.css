@@ -1,12 +1,171 @@
-#container {
-    background-image:https://www.hulu.com/static/hitch/s3/2018-01/1600-lifestyle-background%402x.jpg;
+.body {
+    display:flex;
+ 
 }
 
-#mainPicture {
-    height: auto;
-    width: auto;
-    max-width:100%;
-    max-height:50%;
+.firstView {
+    display:flex;
+    background:url('https://www.hulu.com/static/hitch/s3/2018-01/1600-lifestyle-background%402x.jpg');
+    background-size:cover;
+    max-width: 100%;
 }
+
+ul {
+    list-style-type:none;
+    padding:0;
+}
+
+.Banner{
+    display:flex;
+    justify-content:center;
+    height:85vh;
+    background-size:cover;
+    width: 100vw;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+h1,h4,h5,h3,h6 {
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size:300%;
+    font-weight:100;
+}
+
+h4 {
+    font-size:175%;
+    font-weight:10;
+}
+
+h5 {
+    font-size:115%
+}
+
+h3 {
+    color:black;
+    font-weight:bold;
+}
+
+#planOptions {
+    font-size: 130%;
+    height:60px;
+}
+
+#firstSentence {
+    display:flex;
+    align-items:center;
+}
+
+#whitebox {
+    border: 1px solid white;
+    background-color:white;
+    padding:10px;
+}
+
+#navBar {
+    order:1;
+}
+
+#navBar a {
+    /* display:block;
+    float:left; */
+    text-decoration:none;
+    /* display:flex;
+    flex-direction:row; */
+    /* height:30%;
+    width:30%; */
+    
+}
+
+.navItem1 {
+    
+    
+    
+} 
+
+.circle {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    color:white;
+    border:1px solid white;
+}
+
+/* #navItem1:hover{
+    color:#F1F1F1;
+} */
+
+/* #navItem1 {
+    margin-left:auto;
+    margin-right:auto
+} */
+/* 
+#navBar a:hover {
+    color:lightgray;
+} */
+
+a:link {
+    text-decoration: none;
+    color:white;
+}
+  
+a:visited {
+    text-decoration: none;
+    color:white;
+}
+  
+a:hover {
+    text-decoration: none;
+    color:grey !important;
+}
+  
+a:active {
+    text-decoration: none;
+    color:white;
+}
+
+.line {
+    border-bottom: 2px solid white;
+    width:39%;
+    height:65%;
+    transform:rotate(-90deg);   
+}
+
+.circle {
+    content:'';
+    position:relative;   
+}
+
+ .circle::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:53px;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: 12.5px solid white ;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform:rotate(-360deg);
+}
+
+/* .circle {
+    display:flex;
+    background:url('https://www.pinclipart.com/picdir/middle/190-1906500_long-arrow-up-comments-arrow-up-png-long.png');
+    align-content:center;
+    
+} */
+
+
+
+
+
 
 
