@@ -1,6 +1,57 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:30;
+}
+
+.firstView {
+    display:flex;
+    justify-content:space-between;
+    padding:60px 10%;
+    background:url('https://www.hulu.com/static/hitch/s3/2018-01/1600-lifestyle-background%402x.jpg');
+    max-width: 100vh;
+    height:85vh;
+    flex-wrap:wrap;
+    flex:1;
+}
+
+.navBar {
+    list-style:none;
+    cursor:pointer;
+}
+
+.navBar li{
+    display: inline-block;
+    padding: 10px 35px;
+    flex-basis:33.3333%;
+}
+
+.navBar li a {
+    transition: all 0.3s ease 0s;
+    font-size: 80%;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.navBar li a:hover {
+    color:lightgray;
+}
+
+.banner {
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+    height:74vh;
+    width:100%;
+    padding:173px; 
+    margin-left:100px;
+}
+
 .body {
     display:flex;
- 
+    
 }
 
 .firstView {
@@ -15,21 +66,64 @@ ul {
     padding:0;
 }
 
-.Banner{
-    display:flex;
-    justify-content:center;
-    height:85vh;
-    background-size:cover;
-    width: 100vw;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    
+#whitebox {
+    border:1px solid white;
+    background-color:white;
+    padding:0px;
+    margin:30px;
+    width:40%;
+    position:relative;
+    left:15em;
+    min-width: 136px;
+    letter-spacing: 1px;
+}
+
+#whitebox a {
+    text-decoration:none;
+}
+
+.circle {
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+    position: relative;
+    width:60px;
+    height:60px;   
+} 
+
+.circle {
+    content:'';
+    position:relative;  
+}
+
+.line {
+    margin:0 auto;
+    display:block;
+    cursor:pointer;
+    overflow:hidden;
+    position:relative;
+    color:white;
+    text-align:center;
+    font-size:175%;
+    top:-50px;
+
+}
+
+#planOptions {
+    padding:20px;
+    font-size:140%;
+    text-transform:uppercase;
 }
 
 h1,h4,h5,h3,h6 {
+    display:flex;
     color:white;
     font-family: 'Roboto', sans-serif;
+    align-items:center;
+    justify-content:center;
 }
 
 h1 {
@@ -51,121 +145,18 @@ h3 {
     font-weight:bold;
 }
 
-#planOptions {
-    font-size: 130%;
-    height:60px;
-}
-
-#firstSentence {
+.secondView {
     display:flex;
-    align-items:center;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    flex-wrap:nowrap;
 }
 
-#whitebox {
-    border: 1px solid white;
-    background-color:white;
-    padding:10px;
-}
-
-#navBar {
-    order:1;
-}
-
-#navBar a {
-    /* display:block;
-    float:left; */
+a href {
     text-decoration:none;
-    /* display:flex;
-    flex-direction:row; */
-    /* height:30%;
-    width:30%; */
-    
 }
-
-.navItem1 {
-    
-    
-    
-} 
-
-.circle {
-    width:100px;
-    height:100px;
-    border-radius:50%;
-    color:white;
-    border:1px solid white;
-}
-
-/* #navItem1:hover{
-    color:#F1F1F1;
-} */
-
-/* #navItem1 {
-    margin-left:auto;
-    margin-right:auto
-} */
-/* 
-#navBar a:hover {
-    color:lightgray;
-} */
-
-a:link {
-    text-decoration: none;
-    color:white;
-}
-  
-a:visited {
-    text-decoration: none;
-    color:white;
-}
-  
-a:hover {
-    text-decoration: none;
-    color:grey !important;
-}
-  
-a:active {
-    text-decoration: none;
-    color:white;
-}
-
-.line {
-    border-bottom: 2px solid white;
-    width:39%;
-    height:65%;
-    transform:rotate(-90deg);   
-}
-
-.circle {
-    content:'';
-    position:relative;   
-}
-
- .circle::after {
-    content:'';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:53px;
-    margin: 0 auto;
-    width: 0;
-    height: 0;
-    border-top: 12.5px solid white ;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    transform:rotate(-360deg);
-}
-
-/* .circle {
-    display:flex;
-    background:url('https://www.pinclipart.com/picdir/middle/190-1906500_long-arrow-up-comments-arrow-up-png-long.png');
-    align-content:center;
-    
-} */
-
-
-
-
-
 
 
